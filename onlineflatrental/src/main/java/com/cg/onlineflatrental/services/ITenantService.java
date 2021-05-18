@@ -17,11 +17,11 @@ public interface ITenantService {
 
 	public List<Tenant> viewAllTenants();
 
-	public Tenant viewTenantById(Integer tenant_id);
+	public Tenant viewTenantById(int tenantId);
 
 	public Tenant updateTenant(Tenant tenant);
 
-	public boolean deleteTenant(Tenant tenant);
-	
-	//validation()
+	public Tenant validateTenat(int tenantId);
+
+	public Boolean deleteTenant(int tenantId);
 }

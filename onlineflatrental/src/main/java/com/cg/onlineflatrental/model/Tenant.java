@@ -1,53 +1,66 @@
 package com.cg.onlineflatrental.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 import org.springframework.stereotype.Component;
 
-@Component
+@Entity
 public class Tenant {
+	public Tenant(int tenantId, int age, FlatAddress flatAddress) {
+		super();
+		this.tenantId = tenantId;
+		this.age = age;
+		this.flatAddress = flatAddress;
+	}
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	
-	private int tenant_id;
+	private int tenantId;
 	private int age;
-	private FlatAddress taddress;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="FlatAddressID")
+	private FlatAddress flatAddress;
   
 	public Tenant()
 	{
 		super();
 	}
-	
-	public Tenant(int tenant_id, int age, FlatAddress taddress) {
-		super();
-		this.tenant_id = tenant_id;
-		this.age = age;
-		this.taddress = taddress;
+
+	public int getTenantId() {
+		return tenantId;
 	}
-	
-	public void setTenantId(int tenant_id)
-	{
-		this.tenant_id=tenant_id;
+
+	public void setTenantId(int tenantId) {
+		this.tenantId = tenantId;
 	}
-	public int getTenantId()
-	{
-		return tenant_id;
-	}
-	public void setAge(int age)
-	{
-		this.age=age;
-	}
-	public int getAge()
-	{
+
+	public int getAge() {
 		return age;
 	}
-	public void setTAddress(FlatAddress taddress)
-	{
-		this.taddress=taddress;
+
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public FlatAddress getTAddress()
-	{
-		return taddress;
+
+	public FlatAddress getFlatAddress() {
+		return flatAddress;
 	}
+
+	public void setFlatAddress(FlatAddress flatAddress) {
+		this.flatAddress = flatAddress;
+	}
+
 	@Override
-	public String toString()
-	{
-		return "tenant [ TenantID" + tenant_id + "Age"+ age+"FlatAddress"+taddress+"]";
+	public String toString() {
+		return "Tenant [tenantId=" + tenantId + ", age=" + age + ", flatAddress=" + flatAddress + "]";
 	}
+	
+	
 }

@@ -3,6 +3,7 @@ package com.cg.onlineflatrental.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,9 +29,9 @@ public class TenantController {
 	return (List<Tenant>) tenantService.viewAllTenants();
 	}
 	
-	@GetMapping("/viewTenantById/{tenant_id}")
-    public Tenant viewTenantById(@PathVariable Integer tenant_id){
-    return tenantService.viewTenantById(tenant_id);
+	@GetMapping("/viewTenantById/{tenantId}")
+    public Tenant viewTenantById(@PathVariable int tenantId){
+    return tenantService.viewTenantById(tenantId);
 	}   
 	
 	@PostMapping("/addTenant")
@@ -41,15 +42,21 @@ public class TenantController {
 	@PutMapping("/updateTenant")
 	public Tenant updateTenant(@RequestBody Tenant tenant){
 	return tenantService.updateTenant(tenant);
-     }
-
-	@DeleteMapping("/deleteTenant")
-	public boolean deleteTenant(@RequestBody Tenant tenant){
-	return tenantService.deleteTenant(tenant);
-	 }
+	}
 	
 	
-	//validation...
+		
+	@DeleteMapping("/deleteTenant/{tenantId}")
+	public Boolean deleteTenant(@PathVariable int tenantId) {
+		return tenantService.deleteTenant(tenantId);
+		}
+	
+	
+	@Validated
+	public Tenant validateTenant(@RequestBody int tenantId ) {
+		return tenantService.validateTenat(tenantId);
+	}
+	
 }	  
 	  
 	  
