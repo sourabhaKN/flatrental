@@ -1,6 +1,7 @@
 package com.cg.onlineflatrental.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cg.onlineflatrental.dao.ITenantDao;
+import com.cg.onlineflatrental.exception.TenantNotFoundException;
 import com.cg.onlineflatrental.model.Tenant;
 
 @Service
@@ -16,6 +18,8 @@ public class ITenantServiceImpl implements ITenantService {
 
 	@Autowired
 	private ITenantDao itenantdao;
+	
+	String TenantIdNotFound="flat with given id was not found";
 	
 	@Override
 	public Tenant addTenant(Tenant tenant) {
@@ -29,30 +33,48 @@ public class ITenantServiceImpl implements ITenantService {
 		return itenantdao.findAll();
 	}
     @Override
-	public Tenant viewTenantById(int tenantId) {
+	public Tenant viewTenantById(int tenantId)throws TenantNotFoundException {
 		// TODO Auto-generated method stub
-		return itenantdao.findById(tenantId).get();
+		Optional<Tenant> optional= itenantdao.findById(tenantId);
+		if(optional.isPresent())
+		{
+			Tenant tenant=optional.get();
+		    return tenant;
+			
+		}
+		else
+		{
+			throw new TenantNotFoundException("Tenant ID not found");
 	}
+    }
 
 	@Override
-	public Tenant updateTenant(Tenant tenant) {
+	public Tenant updateTenant(Tenant tenant)throws TenantNotFoundException {
 		// TODO Auto-generated method stub
-		return itenantdao.save(tenant);
+		Optional<Tenant> optional= itenantdao.findById(tenant.getTenantId());
+		if(optional.isPresent())
+		{
+			 return itenantdao.save(tenant);
+
+		}
+		else
+		  		throw new TenantNotFoundException("Tenant ID not found");
 	}
 	
 	
 	
     @Override
-	public Boolean deleteTenant(int tenantId) {
+	public Boolean deleteTenant(int tenantId)throws TenantNotFoundException {
 		// TODO Auto-generated method stub
-    	Tenant tenant=itenantdao.findById(tenantId).get();
+    	Optional<Tenant> optional=itenantdao.findById(tenantId);
         itenantdao.deleteById(tenantId);
 
-        if(null==tenant)
+        if(optional.isPresent())
         {
-            return true;
+        	return true;
         }
-        return false;
+        
+        throw new TenantNotFoundException("Tenant ID not found");
 		//return itenantdao.deleteTenantByID(tenantId);
 	}
 

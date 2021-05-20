@@ -3,6 +3,8 @@ package com.cg.onlineflatrental.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cg.onlineflatrental.exception.TenantNotFoundException;
 import com.cg.onlineflatrental.model.Tenant;
 import com.cg.onlineflatrental.services.ITenantService;
 
@@ -29,9 +32,12 @@ public class TenantController {
 	return (List<Tenant>) tenantService.viewAllTenants();
 	}
 	
-	@GetMapping("/viewTenantById/{tenantId}")
-    public Tenant viewTenantById(@PathVariable int tenantId){
-    return tenantService.viewTenantById(tenantId);
+	@GetMapping("/viewTenantById/{tenantId}") 
+    public ResponseEntity viewTenantById(@PathVariable int tenantId)throws TenantNotFoundException
+	{
+		
+      Tenant tenant= tenantService.viewTenantById(tenantId);
+       return new ResponseEntity(tenant,HttpStatus.OK);
 	}   
 	
 	@PostMapping("/addTenant")
@@ -40,15 +46,17 @@ public class TenantController {
 	}    
 	
 	@PutMapping("/updateTenant")
-	public Tenant updateTenant(@RequestBody Tenant tenant){
-	return tenantService.updateTenant(tenant);
+	public ResponseEntity updateTenant(@RequestBody Tenant tenant)throws TenantNotFoundException{
+	Tenant tenant1= tenantService.updateTenant(tenant);
+	return new ResponseEntity(tenant1,HttpStatus.OK);
 	}
 	
 	
 		
 	@DeleteMapping("/deleteTenant/{tenantId}")
-	public Boolean deleteTenant(@PathVariable int tenantId) {
-		return tenantService.deleteTenant(tenantId);
+	public ResponseEntity deleteTenant(@PathVariable int tenantId)throws TenantNotFoundException {
+	 tenantService.deleteTenant(tenantId);
+		return new ResponseEntity("Tenant successfully deleted ",HttpStatus.OK);
 		}
 	
 	
