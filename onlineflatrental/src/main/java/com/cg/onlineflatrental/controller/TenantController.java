@@ -41,7 +41,7 @@ public class TenantController {
 	}   
 	
 	@PostMapping("/addTenant")
-    public Tenant addTenant(@RequestBody Tenant tenant){
+    public Tenant addTenant(@RequestBody Tenant tenant)throws TenantNotFoundException{
     return tenantService.addTenant(tenant);
 	}    
 	
@@ -55,8 +55,8 @@ public class TenantController {
 		
 	@DeleteMapping("/deleteTenant/{tenantId}")
 	public ResponseEntity deleteTenant(@PathVariable int tenantId)throws TenantNotFoundException {
-	 tenantService.deleteTenant(tenantId);
-		return new ResponseEntity("Tenant successfully deleted ",HttpStatus.OK);
+         tenantService.deleteTenant(tenantId);
+		return new ResponseEntity("Tenant deleted successfully",HttpStatus.OK);
 		}
 	
 	

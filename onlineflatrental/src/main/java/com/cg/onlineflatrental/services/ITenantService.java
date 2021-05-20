@@ -14,7 +14,7 @@ public interface ITenantService {
 	public List<Tenant> viewAllTenant();
 	public Tenant validateTenant(int tenantId);*/
 
-	public Tenant addTenant(Tenant tenant);
+	public Tenant addTenant(Tenant tenant)throws TenantNotFoundException ;
 
 	public List<Tenant> viewAllTenants();
 
@@ -22,7 +22,7 @@ public interface ITenantService {
 
 	public Tenant updateTenant(Tenant tenant)throws TenantNotFoundException;
 
-	public Tenant validateTenat(int tenantId);
-
 	public Boolean deleteTenant(int tenantId)throws TenantNotFoundException;
+
+	public Tenant validateTenat(int tenantId);
 }
