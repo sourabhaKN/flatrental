@@ -22,8 +22,8 @@ public class Tenant {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	
-	private int tenantId;
-	private int age;
+	private Integer tenantId;
+	private Integer age;
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="FlatAddressID")
 	private FlatAddress flatAddress;

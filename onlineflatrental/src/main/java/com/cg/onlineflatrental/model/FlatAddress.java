@@ -23,12 +23,12 @@ public class FlatAddress {
 	}
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int addressId;
-	private int houseNo;
+    private Integer addressId;
+	private Integer houseNo;
 	private String street;
 	private String city;
 	private String state;
-	private int pin;
+	private Integer pin;
 	private String country;
 	public int getAddressId() {
 		return addressId;

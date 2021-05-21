@@ -2,6 +2,8 @@ package com.cg.onlineflatrental.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,30 +26,41 @@ import com.cg.onlineflatrental.services.ITenantService;
 @RequestMapping("/Tenant")
 public class TenantController {
 	
+	final Logger LOGGER= LoggerFactory.getLogger(this.getClass());
+	
 	@Autowired
     private ITenantService tenantService;
     
 	@GetMapping("/viewAllTenants")
 	public List<Tenant> viewAllTenants(){
+		LOGGER.info("viewAllTenants URL is opened");
+		LOGGER.info("viewAllTenant() is initiated");
+		LOGGER.info("viewAllTenant() has executed");
 	return (List<Tenant>) tenantService.viewAllTenants();
 	}
 	
 	@GetMapping("/viewTenantById/{tenantId}") 
     public ResponseEntity viewTenantById(@PathVariable int tenantId)throws TenantNotFoundException
 	{
-		
+		LOGGER.info("viewTenantById URL is opened");
+		LOGGER.info("viewTenantById() is initiated");
       Tenant tenant= tenantService.viewTenantById(tenantId);
+      LOGGER.info("viewTenantById() has executed");
        return new ResponseEntity(tenant,HttpStatus.OK);
 	}   
 	
 	@PostMapping("/addTenant")
     public Tenant addTenant(@RequestBody Tenant tenant)throws TenantNotFoundException{
+		
     return tenantService.addTenant(tenant);
 	}    
 	
 	@PutMapping("/updateTenant")
 	public ResponseEntity updateTenant(@RequestBody Tenant tenant)throws TenantNotFoundException{
+		LOGGER.info("updateTenant URL is opened");
+		LOGGER.info("updateTenant() is initiated");
 	Tenant tenant1= tenantService.updateTenant(tenant);
+	LOGGER.info("updateTenant() has executed");
 	return new ResponseEntity(tenant1,HttpStatus.OK);
 	}
 	
@@ -55,7 +68,10 @@ public class TenantController {
 		
 	@DeleteMapping("/deleteTenant/{tenantId}")
 	public ResponseEntity deleteTenant(@PathVariable int tenantId)throws TenantNotFoundException {
+		LOGGER.info("deleteTenant URL is opened");
+		LOGGER.info("deleteTenant() is initiated");
          tenantService.deleteTenant(tenantId);
+         LOGGER.info("deleteTenant() has executed");
 		return new ResponseEntity("Tenant deleted successfully",HttpStatus.OK);
 		}
 	

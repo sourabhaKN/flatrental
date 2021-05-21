@@ -1,0 +1,393 @@
+22-05-2021 00:29:53 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 11860 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:29:53 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 00:30:07 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:30:07 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 328ms. Found 1 JPA repository interfaces.
+22-05-2021 00:30:15 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:30:15 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:30:16 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:30:17 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:30:19 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:30:19 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:30:20 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:30:21 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:30:27 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:30:27 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:30:28 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:30:28 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:30:28 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 35.881 seconds (JVM running for 42.863)
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:30:29 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:30:30 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:30:30 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:30:30 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 00:30:30 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 00:34:30 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 9080 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:34:30 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 00:34:33 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:34:33 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197ms. Found 1 JPA repository interfaces.
+22-05-2021 00:34:36 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:34:37 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:34:37 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:34:37 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:34:39 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:34:40 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:34:41 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:34:41 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:34:46 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:34:46 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:34:48 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:34:48 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:34:48 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 19.048 seconds (JVM running for 25.559)
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:34:49 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:34:50 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:34:50 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:34:50 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 00:34:51 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 00:37:48 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 7548 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:37:48 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 00:37:51 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:37:51 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201ms. Found 1 JPA repository interfaces.
+22-05-2021 00:37:55 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:37:55 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:37:55 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:37:56 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:37:57 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:37:58 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:37:59 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:37:59 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:38:03 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:38:03 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:38:05 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:38:05 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:38:05 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 18.302 seconds (JVM running for 24.975)
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:38:07 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:38:08 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:38:08 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:38:08 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 00:38:08 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 00:40:47 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 15136 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:40:47 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 00:40:51 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:40:51 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 264ms. Found 1 JPA repository interfaces.
+22-05-2021 00:40:55 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:40:55 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:40:56 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:40:56 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:40:58 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:40:59 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:41:00 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:41:01 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:41:06 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:41:06 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:41:07 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:41:07 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:41:07 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 20.305 seconds (JVM running for 26.852)
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:41:08 - ERROR com.cg.onlineflatrental.services.ITenantServiceImpl : Age less than 18 is not allowed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:41:08 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:41:09 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:41:09 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:41:09 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 00:41:09 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 00:46:11 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 9884 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:46:11 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 00:46:14 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:46:15 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 288ms. Found 1 JPA repository interfaces.
+22-05-2021 00:46:18 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:46:18 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:46:19 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:46:19 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:46:21 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:46:21 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:46:22 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:46:23 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:46:27 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:46:27 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:46:28 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:46:28 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:46:28 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 18.441 seconds (JVM running for 24.904)
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:46:30 - ERROR com.cg.onlineflatrental.services.ITenantServiceImpl : Age less than 18 is not allowed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 00:46:30 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 00:46:31 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:46:31 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:46:31 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 00:46:31 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 00:49:14 - INFO  com.cg.onlineflatrental.OnlineFlatRenatlApplication : Starting OnlineFlatRenatlApplication on DESKTOP-AG88OK1 with PID 15956 (C:\Users\lenovo\git\onlineflatrental\onlineflatrental\target\classes started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 00:49:14 - INFO  com.cg.onlineflatrental.OnlineFlatRenatlApplication : No active profile set, falling back to default profiles: default
+22-05-2021 00:49:16 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 00:49:17 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220ms. Found 1 JPA repository interfaces.
+22-05-2021 00:49:19 - INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9000 (http)
+22-05-2021 00:49:19 - INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+22-05-2021 00:49:19 - INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.39]
+22-05-2021 00:49:19 - INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+22-05-2021 00:49:19 - INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4984 ms
+22-05-2021 00:49:20 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 00:49:20 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 00:49:20 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 00:49:21 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 00:49:21 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 00:49:22 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 00:49:22 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 00:49:23 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 00:49:24 - INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9000 (http) with context path ''
+22-05-2021 00:49:25 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 00:49:26 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 00:49:26 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 00:49:27 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 00:49:27 - INFO  com.cg.onlineflatrental.OnlineFlatRenatlApplication : Started OnlineFlatRenatlApplication in 13.545 seconds (JVM running for 14.356)
+22-05-2021 00:50:07 - INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-05-2021 00:50:07 - INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+22-05-2021 00:50:07 - INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 32 ms
+22-05-2021 01:00:42 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 8804 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 01:00:42 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 01:00:45 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 01:00:45 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246ms. Found 1 JPA repository interfaces.
+22-05-2021 01:00:48 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 01:00:48 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 01:00:49 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 01:00:49 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 01:00:51 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 01:00:51 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 01:00:52 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 01:00:52 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 01:00:56 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 01:00:56 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 01:00:58 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 01:00:58 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 17.025 seconds (JVM running for 22.255)
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:00:58 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:01:00 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 01:01:00 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 01:01:00 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 01:01:00 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+22-05-2021 01:02:35 - INFO  com.cg.onlineflatrental.controller.TenantController : viewAllTenants URL is opened
+22-05-2021 01:02:35 - INFO  com.cg.onlineflatrental.controller.TenantController : viewAllTenant() is initiated
+22-05-2021 01:02:35 - INFO  com.cg.onlineflatrental.controller.TenantController : viewAllTenant() has executed
+22-05-2021 01:02:35 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : viewAllTenant() service is initiated
+22-05-2021 01:02:35 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : viewAllTenant() service has executed
+22-05-2021 01:18:08 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Starting ITenantServiceTest on DESKTOP-AG88OK1 with PID 5080 (started by lenovo in C:\Users\lenovo\git\onlineflatrental\onlineflatrental)
+22-05-2021 01:18:08 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : No active profile set, falling back to default profiles: default
+22-05-2021 01:18:10 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+22-05-2021 01:18:11 - INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220ms. Found 1 JPA repository interfaces.
+22-05-2021 01:18:14 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+22-05-2021 01:18:14 - INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2021 01:18:14 - INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.22.Final
+22-05-2021 01:18:15 - INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22-05-2021 01:18:16 - WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2021 01:18:17 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+22-05-2021 01:18:18 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+22-05-2021 01:18:18 - INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+22-05-2021 01:18:22 - INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22-05-2021 01:18:22 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 01:18:24 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+22-05-2021 01:18:24 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.service.ITenantServiceTest : Started ITenantServiceTest in 17.296 seconds (JVM running for 22.834)
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validation Successful
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantAge() has executed
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : addTenant() service is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenant() is initiated
+22-05-2021 01:18:24 - INFO  com.cg.onlineflatrental.services.ITenantServiceImpl : validateTenantId() is initiated
+22-05-2021 01:18:25 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2021 01:18:25 - INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+22-05-2021 01:18:25 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+22-05-2021 01:18:25 - INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
