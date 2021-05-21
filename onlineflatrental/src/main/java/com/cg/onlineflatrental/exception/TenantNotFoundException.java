@@ -9,3 +9,4 @@ public class TenantNotFoundException extends Exception {
 		super(message);
 	}
 }
+

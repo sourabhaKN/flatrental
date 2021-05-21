@@ -18,3 +18,4 @@ public class OnlineFlatRenatlApplication {
 	      return new RestTemplate();
 	   }
 }
+

@@ -16,6 +16,5 @@ import com.cg.onlineflatrental.model.Tenant;
 @Repository
 public interface ITenantDao extends JpaRepository<Tenant, Integer> {
 
-
 	
 }

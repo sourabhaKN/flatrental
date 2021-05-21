@@ -31,6 +31,7 @@ public class TenantController {
 	@Autowired
     private ITenantService tenantService;
     
+	
 	@GetMapping("/viewAllTenants")
 	public List<Tenant> viewAllTenants(){
 		LOGGER.info("viewAllTenants URL is opened");

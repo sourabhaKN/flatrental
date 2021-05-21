@@ -78,8 +78,7 @@ public class FlatAddress {
 				+ ", state=" + state + ", pin=" + pin + ", country=" + country + "]";
 	}
 	
-	
-		
+
 	
 	
 }

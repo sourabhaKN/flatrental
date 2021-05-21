@@ -62,5 +62,5 @@ public class Tenant {
 		return "Tenant [tenantId=" + tenantId + ", age=" + age + ", flatAddress=" + flatAddress + "]";
 	}
 	
-	
+
 }

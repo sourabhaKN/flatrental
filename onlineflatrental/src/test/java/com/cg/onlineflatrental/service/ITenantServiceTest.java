@@ -50,6 +50,7 @@ public class ITenantServiceTest {
 		assertThat(itenantservice.addTenant(tenant)).isEqualTo(tenant);
 	}
 	
+	
 	@Test
 	public void testAddTenant02()throws TenantNotFoundException {
 		Tenant tenant=new Tenant();

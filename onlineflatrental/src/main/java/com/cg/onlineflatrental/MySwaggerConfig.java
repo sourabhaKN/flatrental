@@ -58,4 +58,5 @@ public class MySwaggerConfig {
 	private ApiInfo metadata() {
 		return new ApiInfoBuilder().title("onlineflatrental App").description("API reference guide for developers").termsOfServiceUrl("https://www.abccg.com/").version("1.0").build();	
 	}
+	
 }

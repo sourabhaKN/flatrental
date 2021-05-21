@@ -14,6 +14,7 @@ public class ErrorMessage {
 		super();
 	}
 	
+	
 	public ErrorMessage(int errorCode, String errorMessage) {
 		super();
 		this.errorCode = errorCode;
