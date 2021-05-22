@@ -21,3 +21,4 @@ public interface ITenantService {
 	public Tenant validateTenat(int tenantId);
 }
 
+

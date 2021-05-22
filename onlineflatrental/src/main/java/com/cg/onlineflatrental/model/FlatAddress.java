@@ -30,6 +30,7 @@ public class FlatAddress {
 		this.pin = pin;
 		this.country = country;
 	}
+	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer addressId;

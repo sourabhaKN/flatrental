@@ -18,6 +18,7 @@ import com.cg.onlineflatrental.model.FlatAddress;
 import com.cg.onlineflatrental.model.Tenant;
 
 
+
 @RunWith(SpringRunner.class)
 @DataJpaTest
 public class ITenantDaoTest {

@@ -19,7 +19,6 @@ public class Tenant {
 		this.flatAddress = flatAddress;
 		
 	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	

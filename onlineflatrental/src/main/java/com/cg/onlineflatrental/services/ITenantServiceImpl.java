@@ -15,6 +15,7 @@ import com.cg.onlineflatrental.dao.ITenantDao;
 import com.cg.onlineflatrental.exception.TenantNotFoundException;
 import com.cg.onlineflatrental.model.Tenant;
 
+
 @Service
 @Transactional
 public class ITenantServiceImpl implements ITenantService {

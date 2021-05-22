@@ -16,6 +16,6 @@ public class OnlineFlatRenatlApplication {
 	//@Bean
 //	public RestTemplate getRestTemplate() {
 //		return new RestTemplate();
-	//}
+	//} 
 }
 
