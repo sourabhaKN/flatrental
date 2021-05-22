@@ -13,9 +13,9 @@ public class OnlineFlatRenatlApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineFlatRenatlApplication.class, args);
 	}
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
+	//@Bean
+//	public RestTemplate getRestTemplate() {
+//		return new RestTemplate();
+	//}
 }
 

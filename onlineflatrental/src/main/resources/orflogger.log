@@ -1413,3 +1413,4 @@
 22-05-2021 16:33:51 - INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 22-05-2021 16:33:52 - INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
 22-05-2021 16:33:52 - INFO  com.cg.onlineflatrental.OnlineFlatRenatlApplication : Started OnlineFlatRenatlApplication in 13.857 seconds (JVM running for 14.705)
+22-05-2021 17:50:00 - WARN  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m11s71ms191µs600ns).

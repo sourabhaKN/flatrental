@@ -31,6 +31,9 @@ public class ITenantServiceTest {
 	    private ITenantDao itenantdao;
 	 @Autowired
 	    private ITenantService itenantservice;
+	 
+	 Tenant tenant=null;
+	 FlatAddress flatAddress=null;
 
 	@Test
 	public void testAddTenant01()throws Exception {
@@ -90,9 +93,8 @@ public class ITenantServiceTest {
 	@Test
 	public void testAddTenant04()throws Exception {
 		Tenant tenant=new Tenant();
-		tenant.setTenantId(6);
-		tenant.setAge(100);
-		FlatAddress flatAddress=new FlatAddress();
+		
+	    FlatAddress flatAddress=new FlatAddress();
 		flatAddress.setAddressId(11);
 		flatAddress.setHouseNo(105);
 		flatAddress.setStreet("M G Road");
@@ -100,6 +102,8 @@ public class ITenantServiceTest {
 		flatAddress.setState("Karnataka");
 		flatAddress.setCity("India");
 		flatAddress.setPin(560034);
+		tenant.setTenantId(6);
+		tenant.setAge(100);
 		
 		Mockito.when(itenantdao.saveAndFlush(tenant)).thenReturn(tenant);
 		assertThat(itenantservice.addTenant(tenant)).isEqualTo(tenant);
@@ -107,17 +111,19 @@ public class ITenantServiceTest {
 	
 	@Test
 	public void testAddTenant05()throws Exception {
-		Tenant tenant=new Tenant();
-		tenant.setTenantId(1001);
-		tenant.setAge(102);
-		FlatAddress flatAddress=new FlatAddress();
-		flatAddress.setAddressId(1100);
+		
+		flatAddress=new FlatAddress(20, 105, "M G Road", " Bangalore", "Karnataka", 577101, "India");
+		tenant=new Tenant(10,20, flatAddress);
+		/*tenant.setTenantId(10);
+		tenant.setAge(20);
+		
+		flatAddress.setAddressId(20);
 		flatAddress.setHouseNo(1050);
 		flatAddress.setStreet("M G Road");
 		flatAddress.setCity("Bangalore");
 		flatAddress.setState("Karnataka");
 		flatAddress.setCity("India");
-		flatAddress.setPin(560034);
+		flatAddress.setPin(560034);*/
 		
 		Mockito.when(itenantdao.saveAndFlush(tenant)).thenReturn(tenant);
 		assertThat(itenantservice.addTenant(tenant)).isEqualTo(tenant);

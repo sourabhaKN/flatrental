@@ -10,11 +10,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -28,13 +30,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.cg.onlineflatrental.controller.TenantController;
 import com.cg.onlineflatrental.exception.TenantNotFoundException;
 import com.cg.onlineflatrental.model.FlatAddress;
 import com.cg.onlineflatrental.model.Tenant;
 import com.cg.onlineflatrental.services.ITenantService;
 
+
 @RunWith(SpringRunner.class)
-@WebMvcTest(value = ITenantControllerTest.class)
+@WebMvcTest(value = TenantController.class)
 class ITenantControllerTest{
 
 	@Autowired
@@ -177,6 +181,7 @@ class ITenantControllerTest{
 		flatAddress.setPin(560086);
 		tenant.setTenantId(19);
 		tenant.setAge(20);
+		String jsonInput=this.convertToJson(tenant);
 
 		Mockito.when(itenantservice.updateTenant(Mockito.any())).thenReturn(tenant);
 		MvcResult mvcResult = this.mockMvc.perform(MockMvcRequestBuilders.put(URI).accept(MediaType.APPLICATION_JSON).content(jsonInput).contentType(MediaType.APPLICATION_JSON)).andReturn();
