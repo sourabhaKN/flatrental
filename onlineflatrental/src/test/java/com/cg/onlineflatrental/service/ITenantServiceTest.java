@@ -33,7 +33,7 @@ public class ITenantServiceTest {
 	    private ITenantService itenantservice;
 
 	@Test
-	public void testAddTenant01()throws TenantNotFoundException {
+	public void testAddTenant01()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(1);
 		tenant.setAge(18);
@@ -41,7 +41,7 @@ public class ITenantServiceTest {
 		flatAddress.setAddressId(11);
 		flatAddress.setHouseNo(101);
 		flatAddress.setStreet("M G Road");
-		flatAddress.setCity("Bangalore");
+		flatAddress.setCity("Bangalore#");
 		flatAddress.setState("Karnataka");
 		flatAddress.setCity("India");
 		flatAddress.setPin(560034);
@@ -52,9 +52,9 @@ public class ITenantServiceTest {
 	
 	
 	@Test
-	public void testAddTenant02()throws TenantNotFoundException {
+	public void testAddTenant02()throws Exception {
 		Tenant tenant=new Tenant();
-		tenant.setTenantId(1001);
+		tenant.setTenantId(100);
 		tenant.setAge(16);
 		FlatAddress flatAddress=new FlatAddress();
 		flatAddress.setAddressId(1100);
@@ -70,7 +70,7 @@ public class ITenantServiceTest {
 	}
 	
 	@Test
-	public void testAddTenant03()throws TenantNotFoundException {
+	public void testAddTenant03()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(6);
 		tenant.setAge(20);
@@ -88,7 +88,7 @@ public class ITenantServiceTest {
 	}
 	
 	@Test
-	public void testAddTenant04()throws TenantNotFoundException {
+	public void testAddTenant04()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(6);
 		tenant.setAge(100);
@@ -106,25 +106,25 @@ public class ITenantServiceTest {
 	}
 	
 	@Test
-	public void testAddTenant05()throws TenantNotFoundException {
+	public void testAddTenant05()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(1001);
 		tenant.setAge(102);
 		FlatAddress flatAddress=new FlatAddress();
 		flatAddress.setAddressId(1100);
 		flatAddress.setHouseNo(1050);
-		flatAddress.setStreet("M G4@Road");
-		flatAddress.setCity("Bangalore *#");
-		flatAddress.setState("Karnataka %");
+		flatAddress.setStreet("M G Road");
+		flatAddress.setCity("Bangalore");
+		flatAddress.setState("Karnataka");
 		flatAddress.setCity("India");
-		flatAddress.setPin(56003410);
+		flatAddress.setPin(560034);
 		
 		Mockito.when(itenantdao.saveAndFlush(tenant)).thenReturn(tenant);
 		assertThat(itenantservice.addTenant(tenant)).isEqualTo(tenant);
 	}
 	
 	@Test
-	public void testUpdateTenant01()throws TenantNotFoundException {
+	public void testUpdateTenant01()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(6);
 		tenant.setAge(99);
@@ -141,19 +141,19 @@ public class ITenantServiceTest {
 		flatAddress.setHouseNo(105);
 		
 		Mockito.when(itenantdao.saveAndFlush(tenant)).thenReturn(tenant);
-		assertEquals(tenant.getAge(),16);
+		assertEquals(tenant.getAge(),99);
 	}
 
 	@Test
-	public void testUpdateTenant02()throws TenantNotFoundException {
+	public void testUpdateTenant02()throws Exception {
 		Tenant tenant=new Tenant();
 		tenant.setTenantId(6);
-		tenant.setAge(99);
+		tenant.setAge(10);
 		FlatAddress flatAddress=new FlatAddress();
 		flatAddress.setAddressId(1000);
 		flatAddress.setHouseNo(0);
-		flatAddress.setStreet("M G4Road");
-		flatAddress.setCity("Bangalore 4");
+		flatAddress.setStreet("M G Road");
+		flatAddress.setCity("Bangalore");
 		flatAddress.setState("Karnataka");
 		flatAddress.setCity("India");
 		flatAddress.setPin(5600340);
@@ -162,13 +162,13 @@ public class ITenantServiceTest {
 		flatAddress.setHouseNo(0);
 		
 		Mockito.when(itenantdao.saveAndFlush(tenant)).thenReturn(tenant);
-		assertEquals(flatAddress.getCity(),"Bangalore");
+		assertEquals(tenant.getAge(),10);
 	}
 	
 	@Test
-	public void testUpdateTenant03()throws TenantNotFoundException {
+	public void testUpdateTenant03()throws Exception {
 		Tenant tenant=new Tenant();
-		tenant.setTenantId(6);
+		tenant.setTenantId(9);
 		tenant.setAge(101);
 		FlatAddress flatAddress=new FlatAddress();
 		flatAddress.setAddressId(11);

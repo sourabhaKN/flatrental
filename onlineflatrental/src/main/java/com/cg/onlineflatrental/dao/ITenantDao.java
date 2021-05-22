@@ -8,13 +8,8 @@ import org.springframework.stereotype.Repository;
 
 import com.cg.onlineflatrental.model.Tenant;
 
-/*public class ITenantDao {
-    
-}
-*/
-
 @Repository
 public interface ITenantDao extends JpaRepository<Tenant, Integer> {
 
-	
+
 }

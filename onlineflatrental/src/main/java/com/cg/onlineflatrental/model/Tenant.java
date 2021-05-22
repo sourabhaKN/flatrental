@@ -17,6 +17,7 @@ public class Tenant {
 		this.tenantId = tenantId;
 		this.age = age;
 		this.flatAddress = flatAddress;
+		
 	}
 
 	@Id

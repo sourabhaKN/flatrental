@@ -20,12 +20,12 @@ import com.cg.onlineflatrental.model.Tenant;
 public class ITenantServiceImpl implements ITenantService {
 
 	static final Logger LOGGER = LoggerFactory.getLogger(ITenantServiceImpl.class);
-	
+
 	@Autowired
 	private ITenantDao itenantdao;
-	
+
 	String TenantIdNotFound="flat with given id was not found";
-	
+
 	@Override
 	public Tenant addTenant(Tenant tenant)throws TenantNotFoundException {
 		// TODO Auto-generated method stub
@@ -42,93 +42,83 @@ public class ITenantServiceImpl implements ITenantService {
 		LOGGER.info("viewAllTenant() service has executed");
 		return itenantdao.findAll();
 	}
-    @Override
+	@Override
 	public Tenant viewTenantById(int tenantId)throws TenantNotFoundException {
 		// TODO Auto-generated method stub
-    	LOGGER.info("viewTenant() service is initiated");
+		LOGGER.info("viewTenant() service is initiated");
 		Optional<Tenant> optional= itenantdao.findById(tenantId);
 		if(optional.isPresent())
 		{
-			
+
 			Tenant tenant=optional.get();
 			LOGGER.info("viewTenant() service has executed");
-		    return tenant;
-			
+			return tenant;
+
 		}
 		else
 		{
 			throw new TenantNotFoundException("Tenant ID not found");
+		}
 	}
-    }
 
 	@Override
 	public Tenant updateTenant(Tenant tenant)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
 		LOGGER.info("updateTenant() service is initiated");
 		Optional<Tenant> optional= itenantdao.findById(tenant.getTenantId());
 		if(optional.isPresent())
 		{
 			validateTenant(tenant);
 			LOGGER.info("updateTenant() service has executed");
-			 return itenantdao.save(tenant);
+			return itenantdao.save(tenant);
 
 		}
 		else
-		  		throw new TenantNotFoundException("Tenant ID not found");
+			throw new TenantNotFoundException("Tenant ID not found");
 	}
-	
-	
-	
-    @Override
-	public Boolean deleteTenant(int tenantId)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
-    	LOGGER.info("deleteTenant() service is initiated");
-    	Optional<Tenant> optional=itenantdao.findById(tenantId);
-        itenantdao.deleteById(tenantId);
 
-        if(optional.isPresent())
-        {
-        	LOGGER.info("deleteTenant() service has executed");
-        	 return true;
-        }
-       
-        throw new TenantNotFoundException("Tenant ID not found");
-		//return itenantdao.deleteTenantByID(tenantId);
+
+
+	@Override
+	public Boolean deleteTenant(int tenantId)throws TenantNotFoundException {
+		LOGGER.info("deleteTenant() service is initiated");
+		Optional<Tenant> optional=itenantdao.findById(tenantId);
+		itenantdao.deleteById(tenantId);
+
+		if(optional.isPresent())
+		{
+			LOGGER.info("deleteTenant() service has executed");
+			return true;
+		}
+
+		throw new TenantNotFoundException("Tenant ID not found");
+
 	}
 
 
 	@Override
 	public Tenant validateTenat(int tenantId) {
-		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	public static void validateTenant(Tenant tenant)throws TenantNotFoundException
 	{
 		LOGGER.info("validateTenant() is initiated");
-		//boolean flag=false;
-	//	if(flag==false)
-	//	{
-	//		throw new TenantNotFoundException("Tenant details cannot be null");
-		//}
-	//	else {
-			validateTenantId(tenant.getTenantId());
-			validateTenantAge(tenant.getAge());
-			validateTenantAddressId(tenant.getFlatAddress().getAddressId());
-			validateTenantHouseNo(tenant.getFlatAddress().getHouseNo());
-			validateTenantStreet(tenant.getFlatAddress().getStreet());
-			validateTenantCity(tenant.getFlatAddress().getCity());
-			validateTenantState(tenant.getFlatAddress().getState());
-			validateTenantCountry(tenant.getFlatAddress().getCountry());
-			validateTenantPin(tenant.getFlatAddress().getPin());
-			LOGGER.info("validateTenant() has executed");
-		//	flag=true;
-	//	}
-	//	return flag;
+
+		validateTenantId(tenant.getTenantId());
+		validateTenantAge(tenant.getAge());
+		validateTenantAddressId(tenant.getFlatAddress().getAddressId());
+		validateTenantHouseNo(tenant.getFlatAddress().getHouseNo());
+		validateTenantStreet(tenant.getFlatAddress().getStreet());
+		validateTenantCity(tenant.getFlatAddress().getCity());
+		validateTenantState(tenant.getFlatAddress().getState());
+		validateTenantCountry(tenant.getFlatAddress().getCountry());
+		validateTenantPin(tenant.getFlatAddress().getPin());
+		LOGGER.info("validateTenant() has executed");
+
 	}
 
 	public static Boolean validateTenantCountry(String country)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantCountry() is initiated");
 		boolean flag=false;
 		if(country.isEmpty())
@@ -148,11 +138,11 @@ public class ITenantServiceImpl implements ITenantService {
 		}
 		LOGGER.info("validateTenantCounty() has executed");
 		return flag;
-		
+
 	}
 
 	private static Boolean validateTenantPin(int pin)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantPin() is initiated");
 		boolean flag=false;
 		if(pin<=0)
@@ -177,11 +167,11 @@ public class ITenantServiceImpl implements ITenantService {
 		}
 		LOGGER.info("validateTenantPin() has executed");
 		return flag;
-		
+
 	}
 
 	private static Boolean validateTenantState(String state)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantState() is initiated");
 		boolean flag=false;
 		if(state.isEmpty())
@@ -204,7 +194,7 @@ public class ITenantServiceImpl implements ITenantService {
 	}
 
 	private static Boolean validateTenantCity(String city)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantCity() is initiated");
 		boolean flag=false;
 		if(city.isEmpty())
@@ -224,11 +214,11 @@ public class ITenantServiceImpl implements ITenantService {
 		}
 		LOGGER.info("validateTenantCity() has executed");
 		return flag;	
-		
+
 	}
 
 	private static Boolean validateTenantStreet(String street)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantStreet() is initiated");
 		boolean flag=false;
 		if(street.isEmpty())
@@ -248,11 +238,11 @@ public class ITenantServiceImpl implements ITenantService {
 		}
 		LOGGER.info("validateTenantStreet() has executed");
 		return flag;
-		
+
 	}
 
 	private static Boolean validateTenantHouseNo(int houseNo)throws TenantNotFoundException{
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantHouseNo() is initiated");
 		boolean flag=false;
 		if(houseNo <= 0 || Integer.toString(houseNo).isEmpty() )
@@ -260,18 +250,24 @@ public class ITenantServiceImpl implements ITenantService {
 			LOGGER.error("House Number cannot be 0 or negative or empty");
 			throw new TenantNotFoundException("House Number cannot be Empty or 0 or Negative");
 		}
+		else if(houseNo>10000)
+		{
+			LOGGER.error("House Number cannot be greater than 10000");
+			throw new TenantNotFoundException("House Number cannot be greatre than 10000");
+		}
 		else
+		
 		{
 			LOGGER.info("validation Successful");
 			flag=true;
 		}
 		LOGGER.info("validateTenantHouseNo() has executed");
-			return flag;
-		
+		return flag;
+
 	}
 
 	private static Boolean validateTenantAddressId(int addressId)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantAddressId() is initiated");
 		boolean flag=false;
 		if(addressId > 0 && addressId<1000)
@@ -287,7 +283,7 @@ public class ITenantServiceImpl implements ITenantService {
 		return flag;
 	}
 
-	
+
 	private static Boolean validateTenantAge(int age)throws TenantNotFoundException {
 		LOGGER.info("validateTenantAge() is initiated");
 		boolean flag=false;
@@ -311,7 +307,7 @@ public class ITenantServiceImpl implements ITenantService {
 	}
 
 	private static Boolean validateTenantId(int tenantId)throws TenantNotFoundException {
-		// TODO Auto-generated method stub
+
 		LOGGER.info("validateTenantId() is initiated");
 		boolean flag=false;
 		if(tenantId > 0 && tenantId<1000)
@@ -325,62 +321,7 @@ public class ITenantServiceImpl implements ITenantService {
 		}
 		LOGGER.info("validateTenantId() has executed");
 		return flag;
-		
+
 	}
 
 }
-/*
- 
-package com.cg.onlineflatrental.services;
-
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.cg.onlineflatrental.dao.ITenantDao;
-import com.cg.onlineflatrental.model.Tenant;
-
-public class ITenantServiceImpl implements ITenantService {
-	
-	@Autowired
-
-
-	@Override
-	public Tenant addTenant(Tenant tenant) {
-		return itenantdao.save(tenant);
-	}
-
-	@Override
-	public List<Tenant> viewAllTenants() {
-		return itenantdao.findAll();
-	}
-
-	@Override
-	public Tenant viewTenantById(int tenant_id) {
-		return itenantdao.findById(tenant_id).get();
-	}
-
-	@Override
-	public Tenant updateTenant(Tenant tenant) {
-		return itenantdao.save(tenant);
-	}
-	
-	
-	
-
-	@Override
-	public Tenant validateTenat(int tenant_id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Tenant deleteTenant(int tenant_id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-    
-}
-
-
-*/
