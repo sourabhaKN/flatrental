@@ -61,6 +61,7 @@ class ITenantControllerTest{
 		flatAddress.setPin(560086);
 		tenant.setTenantId(19);
 		tenant.setAge(20);
+		tenant.setFlatAddress(flatAddress);
 		String jsonInput = this.convertToJson(tenant);
 
 		Mockito.when(itenantservice.addTenant(Mockito.any(Tenant.class))).thenReturn(tenant);
@@ -146,7 +147,7 @@ class ITenantControllerTest{
 
 		flatAddress.setHouseNo(10);
 		flatAddress.setCity("Bangalore");
-		flatAddress.setStreet("nagpura");
+		flatAddress.setStreet("nagpura"); 
 		flatAddress.setState("Karnataka");
 		flatAddress.setCountry("India");
 		flatAddress.setPin(560086);

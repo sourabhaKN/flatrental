@@ -8,6 +8,15 @@ import javax.persistence.Id;
 public class FlatAddress {
     
 
+	public FlatAddress(Integer houseNo, String street, String city, String state, Integer pin, String country) {
+		super();
+		this.houseNo = houseNo;
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.pin = pin;
+		this.country = country;
+	}
 	public FlatAddress() {
 		super();
 	}
